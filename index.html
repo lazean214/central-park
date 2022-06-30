@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="/css/datepicker.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/meraas_logo.svg" style="height: 30px; width: auto;" alt="Meraas Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amenities">amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#floorplan">floorplan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#masterplan">masterplan</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <select name="locale" id="locale" class="form-select nav-select">
+                            <option value="en" selected>EN</option>
+                            <option value="ru">RU</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <button class="header-overlay__btn--download btn-theme" data-bs-toggle="modal"  data-bs-target="#downloadModal">Download Brochure</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <header>
+        <div class="header-overlay">
+        <div class="header-centered">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center"> <img src="/assets/central_park_logo.svg" class="central-park-logo mb-4" alt="Central Park"></div>
+                       
+                        <h1 class="header-text text-white">Launching Soon!</h1>
+                        <div class="header-btn">
+                            <button class="header-overlay__btn--download" data-bs-toggle="modal"  data-bs-target="#requestModal">Send Request</button> <button class="header-overlay__btn--download" data-bs-toggle="modal"  data-bs-target="#downloadModal">Download Brochure</button>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-center"><span class="bg-theme px-2">FREE</span> Consultation</h3>
+                </div>
+                <div class="col-lg-4">
+                    <button class="header-overlay__btn--download btn-theme" data-bs-toggle="modal"  data-bs-target="#appointmentModal">Book an Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="offer">
+        <div class="offer-overlay">
+            <div class="center-items">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="d-none d-lg-block  col-lg-6 position-relative">
+                            <img src="/assets/video-cover.jpg" class="w-100" alt="park">
+                            <img src="/assets/play.png" data-src="https://www.youtube.com/embed/Hryj7pLGU8Q" data-bs-toggle="modal"  data-bs-target="#carouselVideo" class="play-icon video-btn" alt="play button">
+                        </div>
+                        <div class="col-lg-6 position-relative">
+                            <div class="center-items">
+                            <h2>Meraas Central Park Apartments at City Walk</h2>
+                            <p>Central Park at City Walk is a superb setting for a healthier and active lifestyle, with morning park runs, fresh air and fun evenings being part of your routine. Press pause on life whenever you want, and find the best restaurants, cafes, sophisticated stores and the ultimate entertainment right at your doorstep.</p>
+                            <button class="header-overlay__btn--download p-3 btn-outline-white"  data-bs-toggle="modal"  data-bs-target="#requestModal">Request Available Units !</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/06.svg" alt="city walk">
+                                <div>1 Minute From</div>
+                                <div>City Walk Mall</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/02.svg" alt="Jemeirah Beach">
+                                <div>10 Minutes From</div>
+                                <div>Jumeirah Beach</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/04.svg" alt="Bruj Al Arab">
+                                <div>15 Minutes From</div>
+                                <div>Burj Al Arab</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/03.svg" alt="Dubai International Airport">
+                                <div>15 Minutes From</div>
+                                <div>Dubai Intl. Airport</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/01.svg" alt="La mer Dubai">
+                                <div>15 Minutes From</div>
+                                <div>La Mer</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2 mb-3">
+                            <div class="text-center connection">
+                                <img src="/assets/icons/05.svg" alt="Al Maktoum International Airport">
+                                <div>50 Minutes From</div>
+                                <div>Al Maktoum Intl. Airport</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="bg-theme">
+        <div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img src="/assets/gallery/ex1.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/ex2.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/ex3.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/ex4.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/ex5.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/ex6.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/in1.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/in2.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/in3.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/in4.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+                <div class="item">
+                    <img src="/assets/gallery/in5.jpg" class="w-100" alt="Central Park City Walk">
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="amenities" class=" py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-3">
+                    <img src="/assets/amenities.jpg" class="w-100 rounded" alt="Central Park">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="section-title">Amenities</h3>
+                   <div class="row">
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/pools_water_play_area.svg" alt="Pool and water play area">
+                        <span class="amenities-text">Pool & Water Play</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/kids_play_area.svg" alt="kids play area">
+                        <span class="amenities-text">Kids Play Area</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/running_track.svg" alt="running track">
+                        <span class="amenities-text">Running Track</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/dog_park.svg" alt="dog park">
+                        <span class="amenities-text">Dog Park</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/multi-use_games.svg" alt="Multi-use gym and Sports area">
+                        <span class="amenities-text">Sports Area</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/outdoor_gym.svg" alt="Outdoor Gym & Fitness Area">
+                        <span class="amenities-text">Outdoor Gym</span>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/spa_sauna.svg" alt="Spa and Sauna Area">
+                        <span class="amenities-text">Spa &amp; Sauna</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/yoga_area.svg" alt="Yoga & meditation area">
+                        <span class="amenities-text">Yoga &amp; Meditation</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/dinning_retail_store.svg" alt="Dinning Outlet and Retail Store">
+                        <span class="amenities-text">Dining &amp; Retails</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/nursery.svg" alt="Nursery">
+                        <span class="amenities-text">Nursery</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/events_area.svg" alt="Events Area">
+                        <span class="amenities-text">Events Area</span>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-3">
+                        <img class="amenities-icon" src="/assets/icons/barbecue.svg" alt="Picnic & Barbecue Area">
+                        <span class="amenities-text">Picnic Area</span>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="floorplan">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="section-title">Floor Plan</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified border-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">1 Bedroom</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">2 Bedroom</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">3 Bedroom</button>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 position-relative">
+                                    <div class="center-items p-5">
+                                    <h4>1 Bedroom Apartment</h4>
+                                    <div>Suite Area: <span>619 sqft</span></div>
+                                    <div>Balcony Area: <span>102 sqft</span></div>
+                                    <div>Total Area: <span class="total-area">721 sqft</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 text-center p-5">
+                                    <img src="/assets/floorplan_1br.jpg" class="floorplan-img" alt="1 bedroom floor plan">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 position-relative">
+                                    <div class="center-items p-5">
+                                    <h4>2 Bedroom Apartment</h4>
+                                    <div>Suite Area: <span>1015 sqft</span></div>
+                                    <div>Balcony Area: <span>472 sqft</span></div>
+                                    <div>Total Area: <span  class="total-area">1487 sqft</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 text-center p-5">
+                                    <img src="/assets/floorplan_2br.jpg" class="floorplan-img" alt="2 bedroom floor plan">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 position-relative">
+                                    <div class="center-items p-5">
+                                    <h4>3 Bedroom Apartment</h4>
+                                    <div>Suite Area: <span>1847 sqft</span></div>
+                                    <div>Balcony Area: <span>368,88 sqft</span></div>
+                                    <div>Total Area: <span  class="total-area"> 2216 sqft</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 text-center p-5">
+                                    <img src="/assets/floorplan_3br.jpg" class="floorplan-img" alt="3 bedroom floor plan">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-12 text-center">
+                    <button class="header-overlay__btn--download bg-dark text-light py-3">Download all floor plans</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="masterplan" class="bg-theme">
+       <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="section-title">Master Plan</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="/assets/masterplan.png" class="w-100" alt="Central Park Masterplan">
+            </div>
+            <div class="col-lg-6 position-relative py-3">
+                <div class="center-tems">
+                <h2>Unrivaled Location</h2>
+                <p>Set in one of the best central locations in Dubai, Central Park is an ideal place for singles, couples and families to reside in. The area is easily connected with significant parts of Dubai as it is located between Al Wasl Road and the Sheikh Zayed Road. Central Park is considered a residential development where both urban spirit and closeness to nature will combine in the form of12 residential buildings and 20 different community amenities that will eventually be housed here.</p>
+                <p>Viridian and Celadon are the latest additions to the Central Park project. Viridian is a building with more than 100 residential units and offers 1 and 2-bedroom units with a living area from 670 sq.ft to 1,400 sq.ft. Celadon consists of three buildings with more than 150 units with total areas varying from 710 sq.ft to 2,170 sq.ft. All units are provided with green balconies, some of which will overlook the magnificent Central Park area. </p>
+            </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <div class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-center"><span class="bg-theme px-2">FREE</span> Consultation</h3>
+                </div>
+                <div class="col-lg-4">
+                    <button class="header-overlay__btn--download btn-theme" data-bs-toggle="modal"  data-bs-target="#appointmentModal">Book an Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>GET SPECIAL OFFER</h2>
+                    <p>
+                        Full Name
+                        Phone with country code
+                        E-mail
+                        We will call you back within one hour and send you additional information on email.
+                        </p>
+                        <form action="">
+                            <input type="hidden" name="subject" value="Request a callback">
+                            <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+                            <input type="tel" class="form-control mb-3" placeholder="Phone with country code" required>
+                            <input type="email" class="form-control mb-3" placeholder="E-mail" required>
+                            <select name="unit_type" id="" class="form-select mb-3">
+                                <option value="Unspecified" selected disabled>How many Bedrooms</option>
+                                <option value="1 Bedrooms" >1 Bedrooms</option>
+                                <option value="2 Bedrooms" >2 Bedrooms</option>
+                                <option value="3 Bedrooms" >3 Bedrooms</option>
+                                <option value="Multiple Units" >Multiple Units</option>
+                            </select>
+
+                            <button type="submit" class="header-overlay__btn--download bg-dark text-light w-100 py-3">Get Offer</button>
+                        </form>
+                </div>
+                <div class="d-none d-lg-block col-lg-6">
+                    <img src="/assets/footer_img.jpg" class="w-100" alt="Central Park Burj Khalifa">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container py-3">
+        <div class="logo">
+            <a href="https://empirehfbb.com">
+            <img src="https://empirehfbb.com/images/logo-wide.png" style="height: 45px"; alt="Empires Heights Logo">
+        </a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="carouselVideo" tabindex="-1" aria-labelledby="carouselVideoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+              <!-- 16:9 aspect ratio -->
+      <div class="w-100">
+        <iframe width="560" height="315" style="width: 100%; min-height: 390px" src="" id="videoPlayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+    
+            <div class="modal-body">
+                <h4 class="text-center">DISCOVER CENTRAL PARK</h4>
+                <form action="">
+                    <input type="hidden" name="subject" value="Request a callback">
+                    <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+                    <input type="text" class="form-control mb-3" placeholder="Phone with country code" required>
+                    <input type="email" class="form-control mb-3" placeholder="E-mail" required>
+                    <select name="unit_type" id="" class="form-select mb-3" required>
+                        <option value="Unspecified" selected disabled>How many Bedrooms</option>
+                        <option value="1 Bedrooms" >1 Bedrooms</option>
+                        <option value="2 Bedrooms" >2 Bedrooms</option>
+                        <option value="3 Bedrooms" >3 Bedrooms</option>
+                        <option value="Multiple Units" >Multiple Units</option>
+                    </select>
+
+                    <button type="submit" class="header-overlay__btn--download bg-dark text-light w-100 py-3">Learn More</button>
+                </form>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+    
+            <div class="modal-body">
+                <h4 class="text-center">DOWNLOAD BROCHURE</h4>
+                <form action="">
+                    <input type="hidden" name="subject" value="Download Brochure">
+                    <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+                    <input type="text" class="form-control mb-3" placeholder="Phone with country code" required>
+                    <input type="email" class="form-control mb-3" placeholder="E-mail" required>
+            
+                    <button type="submit" class="header-overlay__btn--download bg-dark text-light w-100 py-3">Send</button>
+                </form>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+    
+            <div class="modal-body">
+                <h4 class="text-center">Book an Appointment</h4>
+                <form action="">
+                    <input type="hidden" name="subject" value="Download Brochure">
+                    <input type="text" class="form-control mb-3" name="name" placeholder="Full Name" required>
+                    <input type="text" class="form-control mb-3" name="phone" placeholder="Phone with country code" required>
+                    <input type="email" class="form-control mb-3" name="email" placeholder="E-mail" required>
+                    <input type="text" class="form-control mb-3" name="bookingdate" data-toggle="datepicker" placeholder="Select Date" required>
+                    <input type="text" class="form-control mb-3 timepicker" name="bookingtime" placeholder="Select Time" required>
+                    <button type="submit" class="header-overlay__btn--download bg-dark text-light w-100 py-3">Send</button>
+                </form>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/app.js"></script>
+  
+</body>
+
+</html>
